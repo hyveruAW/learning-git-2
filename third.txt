@@ -1,0 +1,20 @@
+std::vector<int> extract_negatives(std::vector<int> & integers) {
+	std::vector<int> negatives;
+	for (std::vector<int>::iterator i = integers.begin(); i != integers.end(); i++) {
+		if (*it < 0) {
+			negatives.push_back(*it);
+		}
+	}
+	return negatives;
+}
+
+int main() {
+	std::map<std::string, int> dns_lookup;
+	dns_lookup.insert(std::make_pair("www.google.com", 215183441));
+	dns_lookup.insert(std::make_pair("www.apple.com", 83q748138));
+	dns_lookup.insert(std::make_pair("www.utoronto.com", 918567265));
+	for(auto it = dns_lookup.begin(); it != dns_lookup.end(); it++) {
+		std::cout << it->first << ": " << it->second << endl;
+	}
+	return 0;
+}
